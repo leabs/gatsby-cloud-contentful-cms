@@ -15,7 +15,10 @@ if (process.env.CONTENTFUL_HOST) {
   contentfulConfig.host = process.env.CONTENTFUL_HOST
 }
 
-const { spaceId, accessToken } = contentfulConfig
+const {
+  spaceId,
+  accessToken
+} = contentfulConfig
 
 if (!spaceId || !accessToken) {
   throw new Error(
@@ -25,7 +28,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Gatsby Contentful starter!!',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
